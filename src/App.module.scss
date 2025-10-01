@@ -1,0 +1,30 @@
+@import './components/variables';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  // max-width: 1280px;
+}
+.borders {
+  border-top: 1px solid $gray-1;
+  border-bottom: 1px solid $gray-1;
+}
+.mainWrap {
+  max-width: $mainWrap;
+  margin: 0 auto;
+  padding: 0 $side-padding
+}

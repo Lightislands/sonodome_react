@@ -1,0 +1,24 @@
+@import '../variables';
+
+.menu {
+  display: flex;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: $gray-2;
+    }
+
+    &.active {
+      background-color: $gray-1;
+    }
+  }
+}

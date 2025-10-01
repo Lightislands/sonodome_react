@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import '../variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.logoWrap {
+  width: 340px;
+}
+.logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.logoImage {
+  transition: transform 0.5s ease;
+}
+.logoImage:hover {
+  transform: rotate(180deg);
+}
+.link {
+  text-decoration: none;
+}
+.siteName {
+  font-size: 3.0em;
+  font-family: 'Raleway', cursive;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin-left: 10px;
+  color: #494949;
+}
+.logoTitle {
+  font-size: 11px;
+  font-family: 'Raleway', cursive;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin: 0 0 0 35px;
+  color: #494949;
+}
+.facebookImage {
+  width: 40px;
+  height: 40px;
+  margin-top: 14px;
+  transition: transform 0.5s ease;
+}
+.facebookImage:hover {
+  transform: rotate(360deg);
+}

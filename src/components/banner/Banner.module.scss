@@ -1,0 +1,26 @@
+@import '../variables';
+.garyBackground {
+  background-color: $gray-3;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  aspect-ratio: 1140 / 367;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.image.active {
+  opacity: 1;
+}
