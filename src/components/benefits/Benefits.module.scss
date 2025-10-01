@@ -1,0 +1,14 @@
+@import '../variables';
+
+.row {
+  display: flex;
+  max-width: $mainWrap;
+  margin: 0 auto;
+}
+.item {
+  width: 25%;
+  span {
+    display: block;
+    padding: 0 20px;
+  }
+}

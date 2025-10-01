@@ -14,16 +14,22 @@ const MainMenu = () => {
         >
           Home
         </NavLink>
-
         <NavLink
-          to="/about"
+          to="/greenhouse"
           className={({ isActive }) =>
             isActive ? styles.active : undefined
           }
         >
-          About
+          Greenhouse
         </NavLink>
-
+        <NavLink
+          to="/winterDome"
+          className={({ isActive }) =>
+            isActive ? styles.active : undefined
+          }
+        >
+          WinterDome
+        </NavLink>
         <NavLink
           to="/contact"
           className={({ isActive }) =>
