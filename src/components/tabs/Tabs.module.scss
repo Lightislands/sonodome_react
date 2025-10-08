@@ -1,4 +1,4 @@
-@import '../variables';
+@use '../variables' as vars;
 
 .tabsContainer {
   display: flex;
@@ -14,15 +14,15 @@
   padding: 0.5rem 1rem;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
-  color: $color-2
+  color: vars.$color-2
 }
 
 .tabHeader:hover {
-  border-color: lightgray;
+  border-color: vars.$gray-4;
 }
 
 .active {
-  border-color: $color-3;
+  border-color: vars.$color-3;
   font-weight: bold;
 }
 
@@ -32,5 +32,5 @@
 }
 
 .withBorder {
-  border: 1px solid $gray-4;
+  border: 1px solid vars.$gray-4;
 }

@@ -1,7 +1,7 @@
-@import '../variables';
+@use '../variables' as vars;
 
 .grayBackground {
-  background-color: $gray-3;
+  background-color: vars.$gray-3;
 }
 
 .banner {

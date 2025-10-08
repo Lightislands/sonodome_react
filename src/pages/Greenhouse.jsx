@@ -89,7 +89,7 @@ const Greenhouse = () => {
 
               <div>
                 <h3>Kit includes:</h3>
-                <ul className={styles.list}>
+                <ul>
                   <li>Framework made of solid, bio-protected wood</li>
                   <li>
                     High-quality polycarbonate panels or

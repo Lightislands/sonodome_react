@@ -1,4 +1,4 @@
-@import '../variables';
+@use '../variables' as vars;
 
 .header {
   display: flex;
@@ -28,7 +28,7 @@
   letter-spacing: 1px;
   font-weight: 100;
   margin-left: 10px;
-  color: #494949;
+  color: vars.$gray-5;
 }
 .logoTitle {
   font-size: 11px;
@@ -37,7 +37,7 @@
   font-weight: 100;
   letter-spacing: 5px;
   margin: 0 0 0 35px;
-  color: #494949;
+  color: vars.$gray-5;
 }
 .facebookImage {
   width: 40px;

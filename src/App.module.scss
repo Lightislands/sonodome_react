@@ -1,4 +1,4 @@
-@import './components/variables';
+@use './components/variables' as vars;
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -20,20 +20,20 @@ body {
   // max-width: 1280px;
 }
 .borders {
-  border-top: 1px solid $gray-1;
-  border-bottom: 1px solid $gray-1;
+  border-top: 1px solid vars.$gray-1;
+  border-bottom: 1px solid vars.$gray-1;
 }
 .mainWrap {
-  max-width: $mainWrap;
+  max-width: vars.$mainWrap;
   margin: 0 auto;
-  padding: 0 $side-padding;
+  padding: 0 vars.$side-padding;
 }
 
 // Common
 h1 {
   font-family: 'Muli', sans-serif;
   font-weight: 800;
-  color: $gray-5;
+  color: vars.$gray-5;
   font-size: 40px;
   margin: 30px 0 20px;
 }
@@ -42,6 +42,6 @@ h2 {
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     font-size: 2.5em;
-    color: $gray-5;
+    color: vars.$gray-5;
     margin: 0;
 }

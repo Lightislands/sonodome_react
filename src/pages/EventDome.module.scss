@@ -1,13 +1,13 @@
-@import '../components/variables';
+@use '../components/variables' as vars;
 
 .pageWrap {
-  max-width: $mainWrap;
+  max-width: vars.$mainWrap;
   margin: 0 auto;
-  padding: 0 $side-padding;
+  padding: 0 vars.$side-padding;
 }
 
 .pageHeader {
-  @include pageTitle;
+  @include vars.pageTitle;
 }
 
 .container {

@@ -1,13 +1,13 @@
-@import '../components/variables';
+@use '../components/variables' as vars;
 
 .pageWrap {
-  max-width: $mainWrap;
+  max-width: vars.$mainWrap;
   margin: 0 auto;
-  padding: 0 $side-padding;
+  padding: 0 vars.$side-padding;
 }
 
 .pageHeader {
-  @include pageTitle;
+  @include vars.pageTitle;
 }
 
 .thesisXs {
@@ -41,20 +41,20 @@
 
 h3, .h3 {
     font-size: 1.5em;
-    color: #474747;
+    color: vars.$gray-5;
     font-weight: normal;
     display: inline;
 }
 
 .listGr {
   list-style-position: inside;
-    list-style-image: url(/content/marker.png);
+  list-style-image: url(/content/marker.png);
 
   li {
     padding-top: 10px;
   }
   span {
-    color: #5c5c5c;
+    color: vars.$gray-5;
     font-size: 1em;
     padding: 0 0 0 10px;
   }
@@ -66,9 +66,6 @@ img {
     height: auto;
 }
 
-.list {
-
-}
 // @media (min-width: 1200px) {
 //     .container {
 //         width: 1170px;

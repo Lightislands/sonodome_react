@@ -1,4 +1,4 @@
-@import '../variables';
+@use '../variables' as vars;
 
 .menu {
   display: flex;
@@ -14,11 +14,11 @@
     transition: background-color 0.2s ease;
 
     &:hover {
-      background-color: $gray-2;
+      background-color: vars.$gray-2;
     }
 
     &.active {
-      background-color: $gray-1;
+      background-color: vars.$gray-1;
     }
   }
 

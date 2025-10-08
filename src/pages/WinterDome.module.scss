@@ -1,4 +1,4 @@
-@import '../components/variables';
+@use '../components/variables' as vars;
 
 .glampDomesVideo {
     min-width: 40%;
@@ -8,13 +8,13 @@
 }
 
 .pageWrap {
-  max-width: $mainWrap;
+  max-width: vars.$mainWrap;
   margin: 0 auto;
-  padding: 0 $side-padding;
+  padding: 0 vars.$side-padding;
 }
 
 .pageHeader {
-  @include pageTitle;
+  @include vars.pageTitle;
 }
 
 .container {
@@ -44,7 +44,7 @@
 
 h3, .h3 {
     font-size: 1.5em;
-    color: #474747;
+    color: vars.$gray-5;
     font-weight: normal;
     display: inline;
 }
@@ -57,7 +57,7 @@ h3, .h3 {
     padding-top: 10px;
   }
   span {
-    color: #5c5c5c;
+    color: vars.$list;
     font-size: 1em;
     padding: 0 0 0 10px;
   }
@@ -95,7 +95,7 @@ img {
 }
 
 .cost {
-    color: #5b9706;
+    color: vars.$color-4;
     font-size: 30px;
     margin: 0;
 }
@@ -131,7 +131,7 @@ img {
 }
 
 .dots {
-  @include dots;
+  @include vars.dots;
 }
 
 .investment {

@@ -1,8 +1,8 @@
-@import '../variables';
+@use '../variables' as vars;
 
 .row {
   display: flex;
-  max-width: $mainWrap;
+  max-width: vars.$mainWrap;
   margin: 0 auto;
 }
 .item {
