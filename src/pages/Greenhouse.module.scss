@@ -1,0 +1,76 @@
+@import '../components/variables';
+
+.pageWrap {
+  max-width: $mainWrap;
+  margin: 0 auto;
+  padding: 0 $side-padding;
+}
+
+.pageHeader {
+  @include pageTitle;
+}
+
+.thesisXs {
+  font-family: 'Raleway', cursive;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    padding: 0;
+  }
+}
+
+.text {
+  max-width: 50%;
+}
+
+.description {
+  margin-top: 60px;
+}
+
+h3, .h3 {
+    font-size: 1.5em;
+    color: #474747;
+    font-weight: normal;
+    display: inline;
+}
+
+.listGr {
+  list-style-position: inside;
+    list-style-image: url(/content/marker.png);
+
+  li {
+    padding-top: 10px;
+  }
+  span {
+    color: #5c5c5c;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+  }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.list {
+
+}
+// @media (min-width: 1200px) {
+//     .container {
+//         width: 1170px;
+//     }
+// }

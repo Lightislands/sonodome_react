@@ -22,7 +22,7 @@ const MainProducts = () => {
           <div className={styles.underline}></div>
         </div>
       </div>
-      <div onClick={() => navigate("/winterdome")} className={styles.productIcons}>
+      <div onClick={() => navigate("/greenhouse")} className={styles.productIcons}>
         <span className={styles.dots}></span>
         <div className={styles.effectHoney}>
           <img

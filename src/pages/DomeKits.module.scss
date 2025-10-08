@@ -1,0 +1,52 @@
+@import '../components/variables';
+
+.pageWrap {
+  max-width: $mainWrap;
+  margin: 0 auto;
+  padding: 0 $side-padding;
+}
+
+.pageHeader {
+  @include pageTitle;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.thesis {
+  font-size: 2.1em;
+    line-height: 1.5;
+    font-family: 'Raleway', cursive;
+    letter-spacing: 1px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.text {
+  min-width: 40%;
+  line-height: 1.6;
+}
+
+.winterDomeImg {
+    max-width: 500px;
+    width: 50%;
+}
+
+.slideshow {
+  width: 603px;
+  height: 311px;
+}
+
+.domeHome {
+  max-width: 450px;
+}

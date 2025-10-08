@@ -1,0 +1,30 @@
+@import '../components/variables';
+
+.pageWrap {
+  max-width: $mainWrap;
+  margin: 0 auto;
+  padding: 0 $side-padding;
+}
+
+.pageHeader {
+  @include pageTitle;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.row {
+  display: flex;
+  gap: 200px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.dots {
+  @include dots;
+  margin-top: 40px;
+}

@@ -1,0 +1,7 @@
+@import '../components/variables';
+
+.pageWrap {
+  max-width: $mainWrap;
+  margin: 80px auto 0 auto;
+  padding: 0 $side-padding;
+}

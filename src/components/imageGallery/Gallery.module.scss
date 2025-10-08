@@ -1,0 +1,74 @@
+.galleryContainer {
+  text-align: center;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 256px;
+  object-fit: cover;
+  cursor: pointer;
+
+  // borders
+  background: white;
+  border: 1px solid #c2c2c2;
+  padding: 4px;
+
+  // shadow
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  // smooth hover
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.fullImage {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+
+  // fade & zoom animation
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInZoom 0.4s forwards;
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}

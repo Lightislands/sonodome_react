@@ -1,0 +1,145 @@
+@import '../components/variables';
+
+.glampDomesVideo {
+    min-width: 40%;
+    height: auto;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.pageWrap {
+  max-width: $mainWrap;
+  margin: 0 auto;
+  padding: 0 $side-padding;
+}
+
+.pageHeader {
+  @include pageTitle;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    padding: 0;
+  }
+}
+
+.winterDomeImg {
+  margin-top: 40px;
+}
+
+.text {
+  max-width: 50%;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+h3, .h3 {
+    font-size: 1.5em;
+    color: #474747;
+    font-weight: normal;
+    display: inline;
+}
+
+.listGr {
+  list-style-position: inside;
+    list-style-image: url(/content/marker.png);
+
+  li {
+    padding-top: 10px;
+  }
+  span {
+    color: #5c5c5c;
+    font-size: 1em;
+    padding: 0 0 0 10px;
+  }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.glampDomesOffer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.glampDomesOfferLeft {
+    display: block;
+    float: left;
+}
+
+.glampDomesOfferRight {
+    display: block;
+    float: right;
+}
+
+.price {
+    float: left;
+    margin-top: 100px;
+}
+
+.priceRight {
+    float: right;
+}
+
+.cost {
+    color: #5b9706;
+    font-size: 30px;
+    margin: 0;
+}
+
+.glampDomesOfferFeatures {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.glampDomesOfferFeaturesItem {
+    flex-grow: 1;
+    flex-basis: 0;
+    img {
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        border: 1px solid #d7d7d7;
+        display: block;
+        margin: auto;
+    }
+    h6 {
+        font-size: 20px;
+        padding-left: 10px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        margin: 10px 0 0 0;
+    }
+    p {
+        padding: 0 10px;
+    }
+}
+
+.dots {
+  @include dots;
+}
+
+.investment {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.investDescription {
+    padding-left: 40px;
+}

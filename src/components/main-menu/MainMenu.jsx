@@ -28,7 +28,31 @@ const MainMenu = () => {
             isActive ? styles.active : undefined
           }
         >
-          WinterDome
+          Winter Dome
+        </NavLink>
+        <NavLink
+          to="/domekits"
+          className={({ isActive }) =>
+            isActive ? styles.active : undefined
+          }
+        >
+          Dome Kit
+        </NavLink>
+        <NavLink
+          to="/eventdome"
+          className={({ isActive }) =>
+            isActive ? styles.active : undefined
+          }
+        >
+          Event Dome
+        </NavLink>
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            isActive ? styles.active : undefined
+          }
+        >
+          Gallery
         </NavLink>
         <NavLink
           to="/contact"

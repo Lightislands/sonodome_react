@@ -5,6 +5,9 @@ import Home from "./pages/Home.jsx";
 import Greenhouse from "./pages/Greenhouse.jsx";
 import WinterDome from "./pages/WinterDome.jsx";
 import Contact from "./pages/Contact.jsx";
+import DomeKits from "./pages/DomeKits.jsx";
+import EventDome from "./pages/EventDome.jsx";
+import Gallery from "./pages/Gallery.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,9 +17,12 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "greenhouse", element: <Greenhouse /> },
       { path: "winterDome", element: <WinterDome /> },
-      { path: "contact", element: <Contact /> },
-    ],
-  },
+      { path: "domekits", element: <DomeKits /> },
+      { path: "eventdome", element: <EventDome /> },
+      { path: "gallery", element: <Gallery /> },
+      { path: "contact", element: <Contact /> }
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
