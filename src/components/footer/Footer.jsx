@@ -1,7 +1,13 @@
 import styles from "./Footer.module.scss";
 
-const Footer = () => (
-  <div className={styles.footerWrap}>Foooooo</div>
-);
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className={styles.footerWrap}>
+      <p>© {currentYear} All rights reserved.</p>
+    </footer>
+  )
+};
 
 export default Footer;
